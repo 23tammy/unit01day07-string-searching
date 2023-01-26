@@ -10,7 +10,6 @@ public class FindTagContents {
         String tag = ( "<" + scanner.nextLine() + ">" );
 
         int htmli = html.indexOf(tag);
-        System.out.println(htmli);
 
         if (htmli != -1){
             int aftertag = html.indexOf(">", htmli);
