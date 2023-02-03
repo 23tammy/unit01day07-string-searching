@@ -1,3 +1,4 @@
+// good
 import java.util.Scanner;
 
 public class FindTagContents {
@@ -15,7 +16,7 @@ public class FindTagContents {
             int aftertag = html.indexOf(">", htmli);
             int beforetag = html.indexOf("</", aftertag);
 
-            System.out.print(html.substring(aftertag + 1, beforetag));
+            System.out.println(html.substring(aftertag + 1, beforetag));
         }else{
             System.out.println("NO TAG FOUND.");
             
