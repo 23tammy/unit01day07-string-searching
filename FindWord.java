@@ -1,3 +1,8 @@
+// BUG: the 3rd example (searching for "d" caused this to happen:)
+/* Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 26
+        at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+        at java.base/java.lang.String.substring(String.java:1874)
+        at FindWord.main(FindWord.java:16) */
 import java.util.Scanner;
 
 public class FindWord {
